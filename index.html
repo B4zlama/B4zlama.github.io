@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halil Ertuğrul Sarıtaş - GitHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4A00E0, #8E2DE2);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+        h1 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 20px;
+        }
+        .input-container {
+            margin-top: 20px;
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff6f61;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        button:hover {
+            background-color: #ff473d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Halil Ertuğrul Sarıtaş</h1>
+        <p>Electrical and Electronics Engineering</p>
+        <div class="input-container">
+            <input type="text" id="homeworkLink" placeholder="Enter your assignment link here">
+            <button onclick="openLink()">Go to Assignment</button>
+        </div>
+    </div>
+    <script>
+        function openLink() {
+            var link = document.getElementById('homeworkLink').value;
+            if (link) {
+                window.open(link, '_blank');
+            } else {
+                alert('Please enter a valid link!');
+            }
+        }
+    </script>
+</body>
+</html>
